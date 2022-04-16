@@ -71,7 +71,7 @@ jobs:
       working-directory: ./openwrt
       run: |
         git clone https://github.com/fw876/helloworld.git package/ssrp
-        git clone https://github.com/kenzok8/small-package package/small-package     
+        git clone https://github.com/kiddin9/luci-theme-edge/tree/v2.4-18.06 package/luci-theme-edge
     
     - name: Update & Install feeds
       working-directory: ./openwrt
