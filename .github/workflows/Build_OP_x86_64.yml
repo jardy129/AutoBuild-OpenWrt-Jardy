@@ -67,11 +67,11 @@ jobs:
         cd openwrt
         echo "src-git ssrp https://github.com/fw876/helloworld.git" >> ./feeds.conf.default
     
-    - name: 第三方插件
-      working-directory: ./openwrt
-      run: |
-        git clone https://github.com/fw876/helloworld.git package/ssrp
-        git clone https://github.com/kiddin9/luci-theme-edge.git package/luci-theme-edge
+    #- name: 第三方插件
+      #working-directory: ./openwrt
+      #run: |
+        #git clone https://github.com/fw876/helloworld.git package/ssrp
+        #git clone https://github.com/kiddin9/luci-theme-edge.git package/luci-theme-edge
     
     - name: Update & Install feeds
       working-directory: ./openwrt
