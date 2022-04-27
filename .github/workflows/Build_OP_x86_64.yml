@@ -66,6 +66,8 @@ jobs:
         git clone --depth 1 $REPO_URL -b $REPO_BRANCH openwrt
         cd openwrt
         echo "src-git ssrp https://github.com/fw876/helloworld.git" >> ./feeds.conf.default
+        echo "src-git bandwidthd https://github.com/AlexZhuo/luci-app-bandwidthd.git >> ./feeds.conf.default
+        echo "src-git OpenAppFilter https://github.com/destan19/OpenAppFilter.git >> ./feeds.conf.default
     
     #- name: 第三方插件
       #working-directory: ./openwrt
